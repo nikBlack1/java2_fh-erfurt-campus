@@ -1,5 +1,7 @@
 package main;
 
+import main.storage.DataProvider;
+
 import java.util.Collections;
 
 /**
@@ -12,9 +14,17 @@ public class Main
 {
     public static void main( String[] args )
     {
-        int number = 1;
-        System.out.println(number);
+        System.out.println(DataProvider.createTestBuilding().getTitle());
+        System.out.println(DataProvider.createTestBuilding().checkIfIsDorm());
 
 
+        // 1) Initialize the app and its dependencies
+
+
+        // 2) user inputs the search word and selects the filter
+
+
+        // 3) Based on the given data - the program starts the DB
+        //          search and outputs the data to the user
     }
 }
