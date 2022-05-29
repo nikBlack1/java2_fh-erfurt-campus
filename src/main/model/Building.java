@@ -63,8 +63,23 @@ public class Building extends AbstractDatabaseEntity implements Serializable
         this.isDorm = true;
     }
 
+    public void setBuildingAsNotDorm()
+    {
+        if (!this.isDorm) 
+        {
+            System.out.println("This building is already a dorm!");
+            return;
+        }
+        this.isDorm = false;
+    }
+
     public void unsetBuildingAsDorm()
     {
+        if (!this.isDorm)
+        {
+            System.out.println("This building is already NOT a dorm!");
+            return;
+        }
         this.isDorm = false;
     }
 }

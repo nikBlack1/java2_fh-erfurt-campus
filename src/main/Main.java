@@ -1,6 +1,7 @@
 package main;
 
 import main.storage.DataProvider;
+import main.model.Building;
 
 import java.util.Collections;
 
@@ -14,8 +15,8 @@ public class Main
 {
     public static void main( String[] args )
     {
-        System.out.println(DataProvider.createTestBuilding().getTitle());
-        System.out.println(DataProvider.createTestBuilding().checkIfIsDorm());
+
+        Building building2 = new Building("Haus 1", true, "40012030.1023004012", false);
 
 
         // 1) Initialize the app and its dependencies

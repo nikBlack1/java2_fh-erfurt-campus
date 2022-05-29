@@ -23,6 +23,10 @@ public class DataProvider
                 false
         );
 
+        building1.checkIfIsDorm();
+        building1.setBuildingAsDorm();
+        building1.checkIfIsDorm();
+
 
         return building1;
     }
