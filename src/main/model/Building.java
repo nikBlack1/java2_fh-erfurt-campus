@@ -53,9 +53,9 @@ public class Building extends AbstractDatabaseEntity implements Serializable
         this.accessibility = newAccessibility;
     }
 
-    public Boolean checkIfIsDorm()
+    public void checkIfIsDorm()
     {
-        return this.isDorm;
+        // herro
     }
 
     public void setBuildingAsDorm()
